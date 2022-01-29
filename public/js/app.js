@@ -20,7 +20,7 @@ weatherForm.addEventListener('submit', (event) => {
             }
             else {
                 locationMessage.textContent = data.location
-                forecastMessage.textContent = data.forecast
+                forecastMessage.textContent = data.latitude + ' Latitude, ' + data.longitude + ' Longitude'
             }  
         })
     })
